@@ -35,13 +35,14 @@
 
 ## Example
 
-- Run Following command to import
 ```
   data = yf.download('HDFC.NS', start=2021-01-01, end=2022-01-01, interval='1d', auto_adjust=True)
-  tf.plot_Close(data) # to plot close price of data
+  
+  techfin.plot_Close(data)        # to plot close price of data
   
   n = [10, 50, 100]
   data_SMA = techfin.SMA(data, n) # to calulate simple moving average
+  techfin.plot_SMA(data_SMA, n)   # to plot Simple moving average on the Close price graph
 ```
 
 
