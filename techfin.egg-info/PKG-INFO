@@ -1,9 +1,20 @@
-from setuptools import setup, find_packages
-import codecs
+Metadata-Version: 2.1
+Name: techfin
+Version: 0.0.1
+Summary: techfin : A package for technical analysis
+Home-page: https://github.com/ut-upwards/techfin
+Author: UTKARSH SAHAYA
+Author-email: sahai.utkarsh@gmail.com
+Keywords: techical-analysis,finance,tech_fin,indicators,RSI,MACD,MFI,Moving Average
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
 
-VERSION = '0.0.1'
-DESCRIPTION = 'techfin : A package for technical analysis'
-LONG_DESCRIPTION = '''A package that implements technical indicators and plotting functions of them
+A package that implements technical indicators and plotting functions of them
 
 # Indicators implemented in the package
 
@@ -73,26 +84,3 @@ LONG_DESCRIPTION = '''A package that implements technical indicators and plottin
 | 14. | Money_Flow_Index (data, n)                 | Calculate Money Flow Index                                     |
 | 15. | plot_MFI (data, overbought, oversold)      | Plot MFI, highlighting overbought & oversold zones             |
 
-'''
-
-
-setup(
-    name="techfin",
-    version=VERSION,
-    author="UTKARSH SAHAYA",
-    author_email="sahai.utkarsh@gmail.com",
-    url = 'https://github.com/ut-upwards/techfin',
-    description=DESCRIPTION,
-    long_description_content_type="text/markdown",
-    long_description=LONG_DESCRIPTION,
-    packages=['techfin'],
-    install_requires=['pandas', 'numpy', 'matplotlib', 'yfinance'],
-    keywords=['techical-analysis', 'finance', 'tech_fin', 'indicators', 'RSI', 'MACD', 'MFI', 'Moving Average'],
-    classifiers=[
-        "Development Status :: 4 - Beta",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ]
-)
